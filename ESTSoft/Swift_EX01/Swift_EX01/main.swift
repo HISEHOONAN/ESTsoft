@@ -206,4 +206,82 @@ import Foundation
 //
 //print("\(beforemonth)월 \(beforeday)일부터 100일 후는 \(aftermonth)월 \(afterday - 1)일 입니다.")
 
+//MARK: - 1부터 10까지 합
+//var num: Int = 1
+//var total : Int = 0
+//var end : Int = 10
+//
+//while num <= end{
+//    print(num, terminator: num < end ? "+" : "=")
+//    total = num + total
+//    num = num + 1
+//}
+//print(total)
 
+////MARK: - 짝수면 -, 홀수면 +
+//var num: Int = 1
+//var total : Int = 0
+//var end : Int = 10
+//
+//while num <= end{
+//    if num % 2 == 0{
+//        total = total - num
+//        print(num,terminator: num < end ? " + " : " = ")
+//    }else{
+//        total = total + num
+//        print(num,terminator: num < end ? " - " : " = ")
+//    }
+//    num = num + 1
+//}
+//print(total)
+
+//var num1 = 1
+//var num2 = 1
+//var nextnum = 0
+//var i = 0
+//var array = [Int]()
+//var sum = 0
+//
+//array.append(num1)
+//array.append(num2)
+//
+//while i < 6 {
+//    nextnum = num1 + num2
+//    array.append(nextnum)
+//    num1 = num2
+//    num2 = nextnum
+//    i = i + 1
+//    sum = array.reduce(0,+)
+//}
+//print("피보나치 수열 : ",array)
+//print("합계 : ", sum)
+
+var num1 = 1
+var num2 = 1
+var nextnum = 0
+var i = 0
+var array = [Int]()
+var sum = 0
+
+array.append(num1)
+array.append(num2)
+
+while i < 6 {
+    nextnum = num1 + num2
+    array.append(nextnum)
+    num1 = num2
+    num2 = nextnum
+    i = i + 1
+}
+
+print("피보나치 수열 : ",array)
+
+for i in 0..<array.count{
+    if i % 2 == 0{
+        sum = sum + array[i]
+    }else{
+        sum = sum - array[i]
+    }
+}
+
+print("합계 : ", sum)
