@@ -39,6 +39,7 @@ while loop{
     }
 }
 
+//MARK: - 회고 기능들
 func addReflection() {
     print("::: 회고 추가 :::")
     print("날짜를 입력해주세요. (2025-01-01): ", terminator: "")
