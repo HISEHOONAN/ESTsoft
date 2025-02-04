@@ -42,7 +42,6 @@ if let country = readLine() {
 
 
 //MARK: - 두 개의 숫자 셋을 입력받아 합집합, 교집합, 차집합을 출력하는 프로그램을 작성하세요.
-
 let setA: Set = [1, 2, 3, 4, 5]
 let setB: Set = [4, 5, 6, 7, 8]
 
