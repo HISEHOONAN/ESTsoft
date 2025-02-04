@@ -48,3 +48,35 @@ let setB: Set = [4, 5, 6, 7, 8]
 print("합집합: \(setA.union(setB))") //합집합 A + B
 print("교집합: \(setA.intersection(setB))") //교집합 A U B
 print("차집합: \(setA.subtracting(setB))") //차집합 A - B
+
+
+
+//MARK: - 배열 관리 문제
+
+var array: [String] = []
+var cnt : Int = 0
+
+print("몇 개의 단어를 저장하고 싶으신가요?", terminator: "")
+cnt = Int(readLine() ?? "0") ?? 0
+
+for _ in 1...cnt{
+    var word : String = ""
+    print("\(cnt)개 남았습니다. : ", terminator: "")
+    cnt = cnt - 1
+    word = readLine() ?? ""
+    array.append(word)
+}
+print("입력한 단어 목록 : ", array)
+print("제거할 단어를 입력해주세요 : ",terminator: "")
+var removeword : String = ""
+removeword = readLine() ?? ""
+
+if array.contains(removeword){
+    if let removeIndex = array.firstIndex(of: removeword){
+        array.remove(at: removeIndex)
+        print("삭제가 완료되었습니다.")
+        print(array)
+    }
+}else{
+    print("\(removeword)가 존재하지 않습니다.")
+}
