@@ -5,7 +5,7 @@
 //  Created by 안세훈 on 2/5/25.
 //
 
-struct model{
+struct model {
     let name: String
     let number : Int
 }
