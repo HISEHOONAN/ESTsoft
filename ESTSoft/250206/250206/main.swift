@@ -7,5 +7,26 @@
 
 import Foundation
 
-print("Hello, World!")
+class Shape{
+    func draw(){
+        print("도형을 그립니다.")
+    }
+}
 
+class Circle: Shape{
+    override func draw() {
+        print("원을 그립니다.")
+    }
+}
+
+class Retangle: Shape{
+    override func draw() {
+        print("사각형을 그립니다.")
+    }
+}
+
+let shapes : [Shape] = [Circle(),Retangle()]
+
+for shape in shapes{
+    shape.draw()
+}
