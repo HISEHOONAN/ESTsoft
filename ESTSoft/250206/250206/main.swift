@@ -7,26 +7,22 @@
 
 import Foundation
 
-class Shape{
-    func draw(){
-        print("도형을 그립니다.")
-    }
+var menu = 0
+var radius = 0
+var height = 0
+var width = 0
+
+print("도형을 선택해주세요.\n1번 원\n2번 직사각형",terminator: "")
+menu = Int(readLine() ?? "0") ?? 0
+
+switch menu{
+case 1: shapes[0].draw()
+case 2: shapes[1].draw()
+default:
+    print("잘못입력하셨습니다.")
 }
 
-class Circle: Shape{
-    override func draw() {
-        print("원을 그립니다.")
-    }
-}
 
-class Retangle: Shape{
-    override func draw() {
-        print("사각형을 그립니다.")
-    }
-}
-
-let shapes : [Shape] = [Circle(),Retangle()]
-
-for shape in shapes{
-    shape.draw()
-}
+//for shape in shapes{
+//    shape.draw()
+//}
