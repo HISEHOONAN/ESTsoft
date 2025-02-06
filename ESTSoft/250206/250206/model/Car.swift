@@ -24,3 +24,7 @@ class Car {
         print("(color) 자동차가 (speed)km/h로 주행합니다.")
     }
 }
+
+extension Car{
+    
+}
