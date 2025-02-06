@@ -7,12 +7,12 @@
 
 import Foundation
 
-
 class ShapeView {
+    
     var shapes : [Shape]
     
     init(){
-        shapes = [Circle(),Rectangle()]
+        shapes = [Circle(),Rectangle()] //초기화
     }
     
     func showlist(){
@@ -32,10 +32,9 @@ class ShapeView {
         
     }
     
-    
     func main(){
         for i in 1...5{
-            print("\(i)번째 추가할 모양 타입 1:원 2:사각형",terminator: ": ")
+            print("\(i)번째 추가할 모양 타입 \n1:원 2:사각형",terminator: ": ")
             let choice = Int(readLine() ?? "0") ?? 0
             appendlist(choice: choice)
             
