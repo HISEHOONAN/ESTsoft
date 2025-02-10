@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Array 관리 프로그램")
+            Text("단어 관리 프로그램")
                 .font(.largeTitle)
                 .padding(5).background(.cyan).cornerRadius(10)
             //MARK: - 단어 추가
@@ -26,12 +26,10 @@ struct ContentView: View {
                     addWord()
                 }.foregroundStyle(.blue)
                     .padding(5)
-                    .background(.yellow)
                     .cornerRadius(5)
                 Button("검색"){
                     findWord()
                 }.padding(5)
-                    .background(.yellow)
                     .cornerRadius(5)
                     .padding(10)
             }
@@ -43,7 +41,8 @@ struct ContentView: View {
              .animation(Animation.easeInOut(duration: 0.5))
             //MARK: - 단어 삭제
             HStack{
-                TextField("삭제할 단어를 입력해주세요.", text: $wordToDelete).textFieldStyle(RoundedBorderTextFieldStyle()).padding(10)
+                TextField("삭제할 단어를 입력해주세요.", text: $wordToDelete).textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(10)
                 Button("삭제"){
                     deleteWord()
                 }.foregroundStyle(.red)
@@ -73,8 +72,11 @@ struct ContentView: View {
     
     //MARK: - 단어 삭제 함수
     func deleteWord(){
+        
         //입력된 단어와 일치하는 단어를 firstIndex(of : )를 통해 찾기
+        //정확히말하자면, 배열에서 매개변수와 같은 단어중 먼저 마주치는 단어를 리턴.
         //remove()를 이용해 지우기
+        
         if let index = words.firstIndex(of: wordToDelete){
             words.remove(at: index)
             message = "\(wordToDelete) 단어가 삭제되었습니다."
