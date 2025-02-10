@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var newWord: String = ""  // 새로 입력할 단어
     @State private var wordToDelete: String = "" // 삭제할 단어
     @State private var message: String = "단어를 추가해주세요."  // 상태 메시지
-    @State private var wordCnt : Int = 0
     
     var body: some View {
         VStack {
@@ -52,7 +51,7 @@ struct ContentView: View {
         }
         Text(message)
             .padding(5).foregroundStyle(.red)
-        Text("\(wordCnt)개의 단어가 존재합니다.")
+        Text("\(words.count)개의 단어가 존재합니다.")
             .padding(5).foregroundStyle(.cyan)
     }
     //MARK: - 단어 추가 함수
@@ -65,7 +64,6 @@ struct ContentView: View {
                 words.append(newWord)
                 //words는 @state로 인해 상태를 자동으로 감지해서 적용.
                 message = "단어가 추가되었습니다."
-                wordCnt = wordCnt + 1
             }else{
                 message = "단어를 입력해주세요."
             }
@@ -80,7 +78,6 @@ struct ContentView: View {
         if let index = words.firstIndex(of: wordToDelete){
             words.remove(at: index)
             message = "\(wordToDelete) 단어가 삭제되었습니다."
-            wordCnt = wordCnt - 1
         }else{
             if wordToDelete == ""{
                 message = "삭제할 단어를 입력해주세요."
