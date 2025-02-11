@@ -28,7 +28,7 @@ struct ContentView: View {
                     .padding(5)
                     .cornerRadius(5)
                 Button("검색"){
-                    findWord()
+                    searchWord()
                 }.padding(5)
                     .cornerRadius(5)
                     .padding(10)
@@ -74,7 +74,7 @@ struct ContentView: View {
     func deleteWord(){
         
         //입력된 단어와 일치하는 단어를 firstIndex(of : )를 통해 찾기
-        //정확히말하자면, 배열에서 매개변수와 같은 단어중 먼저 마주치는 단어를 리턴.
+        //정확히 말하자면, 배열에서 매개변수와 같은 단어중 먼저 마주치는 단어를 리턴.
         //remove()를 이용해 지우기
         
         if let index = words.firstIndex(of: wordToDelete){
@@ -89,10 +89,10 @@ struct ContentView: View {
         }
         wordToDelete = ""
     }
-    //MARK: - 단어 찾기
-    func findWord(){
+    //MARK: - 단어 검색
+    func searchWord(){
         if let index = words.firstIndex(of: newWord){
-            message = "\(newWord) 단어는 \(index)번째에 있습니다."
+            message = "\(newWord) 단어는 \(index + 1)번째에 있습니다."
         }else{
             message = "\(newWord) 단어가 존재하지 않습니다."
         }
