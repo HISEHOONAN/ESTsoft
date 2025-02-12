@@ -18,6 +18,5 @@ struct ProductListView: View {
                 ProductRow(product: product)
             }
         }
-        
     }
 }
