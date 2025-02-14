@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    
     @Environment(ModelData.self) var modelData
     
     var landmark : Landmark
@@ -45,9 +46,8 @@ struct LandmarkDetail: View {
                     
                     Divider()
                     
-                    
-                    Text("About \(landmark.name)")
-                        .font(.title2)
+                    Text("\(landmark.name)에 대해서")
+                        .font(.title3)
                     Text(landmark.description)
                 }
                 .padding()
