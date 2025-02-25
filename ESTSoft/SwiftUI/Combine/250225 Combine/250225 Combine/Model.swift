@@ -6,8 +6,10 @@
 //
 import Foundation
 
-
 struct Model : Identifiable {
     let id = UUID()
+    var number : Int
+    var lapTime : TimeInterval
+    var totalTime : TimeInterval
     
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct _50225_CombineApp: App {
     var body: some Scene {
         WindowGroup {
-            StopWatchView()
+            StopwatchView()
         }
     }
 }
