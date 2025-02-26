@@ -22,7 +22,7 @@ class ViewModel : ObservableObject {
     
     func fetchAdvice() {
         Network.shared.fetchAdvice()
-            .receive(on: DispatchQueue.main) // UI 업데이트는 메인 스레드에서 수행
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):

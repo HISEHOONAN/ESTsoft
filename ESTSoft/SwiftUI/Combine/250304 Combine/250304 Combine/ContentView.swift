@@ -17,8 +17,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(viewModel.author)
+                .font(.title)
+                .padding(.bottom, 5)
             Text(viewModel.authorProfile)
+                .padding(.bottom, 5)
+                .font(.title2)
             Text(viewModel.message)
+                .font(.title3)
+                .padding(.bottom, 5)
             
             Button("API호출"){
                 viewModel.fetchAdvice()
