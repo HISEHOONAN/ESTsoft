@@ -13,6 +13,7 @@ class ViewModel : ObservableObject {
     @Published var author : String = ""
     @Published var authorProfile : String = ""
     @Published var message : String = ""
+    @Published var APIcount : Int = 0
     
     private var Cancellable = Set<AnyCancellable>()
     
@@ -21,7 +22,7 @@ class ViewModel : ObservableObject {
     }
     
     func fetchAdvice() {
-        Network.shared.fetchAdvice()
+        Network.shared.fetchAdvice() //fetchAdvice를 구독 후 네트워킹에서 publisher로 받음.
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -39,4 +40,6 @@ class ViewModel : ObservableObject {
             })
             .store(in: &Cancellable)
     }
+    
+    
 }

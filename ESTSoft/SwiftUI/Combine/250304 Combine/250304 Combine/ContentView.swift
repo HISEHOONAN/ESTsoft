@@ -25,10 +25,11 @@ struct ContentView: View {
             Text(viewModel.message)
                 .font(.title3)
                 .padding(.bottom, 5)
-            
-            Button("API호출"){
+            Button("API 호출"){
                 viewModel.fetchAdvice()
-            }
+                viewModel.APIcount += 1
+            }.padding()
+            Text(String(viewModel.APIcount))
         }
         .padding()
     }

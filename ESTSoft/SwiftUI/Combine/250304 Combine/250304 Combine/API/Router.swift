@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-var BaseURL : String = "https://korean-advice-open-api.vercel.app"
+let BaseURL : String = "https://korean-advice-open-api.vercel.app"
 
 enum Router {
     case getAdvice

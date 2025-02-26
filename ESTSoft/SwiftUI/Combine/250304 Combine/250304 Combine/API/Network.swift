@@ -5,7 +5,6 @@
 //  Created by 안세훈 on 2/26/25.
 //
 
-import Foundation
 import CombineMoya
 import Moya
 import Combine
@@ -18,12 +17,12 @@ class Network {
     
     static let shared = Network()
     
-    //MARK: -
-    func fetchAdvice() -> AnyPublisher<AuthorResponse, Error> {
-        return provider.requestPublisher(.getAdvice)
+    //MARK: - Network
+    func fetchAdvice() -> AnyPublisher<AuthorResponse, Error> { //값을 모델 혹은 에러로 리턴
+        return provider.requestPublisher(.getAdvice) //네트워킹 요청
             .tryMap { response in
                 try response.map(AuthorResponse.self)
             }
-            .eraseToAnyPublisher()
+            .eraseToAnyPublisher() //반환타입을 Publisher로 바꿈
     }
 }
