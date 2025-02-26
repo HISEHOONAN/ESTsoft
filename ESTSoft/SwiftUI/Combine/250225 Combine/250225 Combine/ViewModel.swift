@@ -9,6 +9,7 @@ import Combine
 
 class ViewModel: ObservableObject {
     
+    //MARK: - publisher
     @Published var timeString: String = "00:00.00"
     @Published var isRunning = false
     @Published var laps: [String] = []
@@ -16,12 +17,6 @@ class ViewModel: ObservableObject {
     private var timer: AnyCancellable?
     private var startTime: Date?
     private var elapsedTime: TimeInterval = 0
-    
-    private func updateTime() {
-        guard let startTime = startTime else { return }
-        elapsedTime = Date().timeIntervalSince(startTime)
-        timeString = formatTime(elapsedTime)
-    }
     
     func startStop() {
         if isRunning {
@@ -34,11 +29,19 @@ class ViewModel: ObservableObject {
     private func start() {
         startTime = Date() - elapsedTime
         isRunning = true
+        //Timer.publish라는 publisher
         timer = Timer.publish(every: 0.01, on: .main, in: .common)
             .autoconnect()
+            //subscriber
             .sink { [weak self] _ in
                 self?.updateTime()
             }
+    }
+    
+    private func updateTime() {
+        guard let startTime = startTime else { return }
+        elapsedTime = Date().timeIntervalSince(startTime)
+        timeString = formatTime(elapsedTime)
     }
     
     private func stop() {
@@ -66,4 +69,6 @@ class ViewModel: ObservableObject {
         let milliseconds = Int((time - Double(minutes * 60) - Double(seconds)) * 100)
         return String(format: "%02d:%02d.%02d", minutes, seconds, milliseconds)
     }
+    
+    
 }
