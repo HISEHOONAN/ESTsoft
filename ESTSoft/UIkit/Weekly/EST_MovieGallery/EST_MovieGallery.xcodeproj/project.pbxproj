@@ -7,59 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D15F1D732D705C380003EC2A /* tableviewcell.swift in Resources */ = {isa = PBXBuildFile; fileRef = D15F1D722D705C330003EC2A /* tableviewcell.swift */; };
+		D15DD1882D7181100095C4A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD1872D7181100095C4A2 /* SnapKit */; };
+		D15DD18D2D7181410095C4A2 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD18C2D7181410095C4A2 /* CombineMoya */; };
+		D15DD18F2D7181410095C4A2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD18E2D7181410095C4A2 /* Moya */; };
+		D15DD1912D7181410095C4A2 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD1902D7181410095C4A2 /* ReactiveMoya */; };
+		D15DD1932D7181410095C4A2 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD1922D7181410095C4A2 /* RxMoya */; };
+		D15DD1962D7181620095C4A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD1952D7181620095C4A2 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D108AE382D6C5EC80069260C /* 250225.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 250225.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D15F1D722D705C330003EC2A /* tableviewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableviewcell.swift; sourceTree = "<group>"; };
+		D15DD1672D717E6B0095C4A2 /* EST_MovieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_MovieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D108AE4A2D6C5EC90069260C /* Exceptions for "250225" folder in "250225" target */ = {
+		D15DD1792D717E6C0095C4A2 /* Exceptions for "EST_MovieGallery" folder in "EST_MovieGallery" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D108AE372D6C5EC80069260C /* 250225 */;
+			target = D15DD1662D717E6B0095C4A2 /* EST_MovieGallery */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D108AE3A2D6C5EC80069260C /* 250225 */ = {
+		D15DD1692D717E6B0095C4A2 /* EST_MovieGallery */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D108AE4A2D6C5EC90069260C /* Exceptions for "250225" folder in "250225" target */,
+				D15DD1792D717E6C0095C4A2 /* Exceptions for "EST_MovieGallery" folder in "EST_MovieGallery" target */,
 			);
-			path = 250225;
+			path = EST_MovieGallery;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D108AE352D6C5EC80069260C /* Frameworks */ = {
+		D15DD1642D717E6B0095C4A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15DD1932D7181410095C4A2 /* RxMoya in Frameworks */,
+				D15DD1882D7181100095C4A2 /* SnapKit in Frameworks */,
+				D15DD1962D7181620095C4A2 /* Kingfisher in Frameworks */,
+				D15DD18F2D7181410095C4A2 /* Moya in Frameworks */,
+				D15DD1912D7181410095C4A2 /* ReactiveMoya in Frameworks */,
+				D15DD18D2D7181410095C4A2 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D108AE2F2D6C5EC80069260C = {
+		D15DD15E2D717E6B0095C4A2 = {
 			isa = PBXGroup;
 			children = (
-				D108AE3A2D6C5EC80069260C /* 250225 */,
-				D108AE392D6C5EC80069260C /* Products */,
-				D15F1D722D705C330003EC2A /* tableviewcell.swift */,
+				D15DD1692D717E6B0095C4A2 /* EST_MovieGallery */,
+				D15DD1682D717E6B0095C4A2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D108AE392D6C5EC80069260C /* Products */ = {
+		D15DD1682D717E6B0095C4A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D108AE382D6C5EC80069260C /* 250225.app */,
+				D15DD1672D717E6B0095C4A2 /* EST_MovieGallery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,75 +76,86 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D108AE372D6C5EC80069260C /* 250225 */ = {
+		D15DD1662D717E6B0095C4A2 /* EST_MovieGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D108AE4B2D6C5EC90069260C /* Build configuration list for PBXNativeTarget "250225" */;
+			buildConfigurationList = D15DD17A2D717E6C0095C4A2 /* Build configuration list for PBXNativeTarget "EST_MovieGallery" */;
 			buildPhases = (
-				D108AE342D6C5EC80069260C /* Sources */,
-				D108AE352D6C5EC80069260C /* Frameworks */,
-				D108AE362D6C5EC80069260C /* Resources */,
+				D15DD1632D717E6B0095C4A2 /* Sources */,
+				D15DD1642D717E6B0095C4A2 /* Frameworks */,
+				D15DD1652D717E6B0095C4A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D108AE3A2D6C5EC80069260C /* 250225 */,
+				D15DD1692D717E6B0095C4A2 /* EST_MovieGallery */,
 			);
-			name = 250225;
+			name = EST_MovieGallery;
 			packageProductDependencies = (
+				D15DD1872D7181100095C4A2 /* SnapKit */,
+				D15DD1892D7181100095C4A2 /* SnapKit-Dynamic */,
+				D15DD18C2D7181410095C4A2 /* CombineMoya */,
+				D15DD18E2D7181410095C4A2 /* Moya */,
+				D15DD1902D7181410095C4A2 /* ReactiveMoya */,
+				D15DD1922D7181410095C4A2 /* RxMoya */,
+				D15DD1952D7181620095C4A2 /* Kingfisher */,
 			);
-			productName = 250225;
-			productReference = D108AE382D6C5EC80069260C /* 250225.app */;
+			productName = EST_MovieGallery;
+			productReference = D15DD1672D717E6B0095C4A2 /* EST_MovieGallery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D108AE302D6C5EC80069260C /* Project object */ = {
+		D15DD15F2D717E6B0095C4A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					D108AE372D6C5EC80069260C = {
+					D15DD1662D717E6B0095C4A2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = D108AE332D6C5EC80069260C /* Build configuration list for PBXProject "250225" */;
+			buildConfigurationList = D15DD1622D717E6B0095C4A2 /* Build configuration list for PBXProject "EST_MovieGallery" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D108AE2F2D6C5EC80069260C;
+			mainGroup = D15DD15E2D717E6B0095C4A2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D15DD1862D7181100095C4A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */,
+				D15DD1942D7181620095C4A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D108AE392D6C5EC80069260C /* Products */;
+			productRefGroup = D15DD1682D717E6B0095C4A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D108AE372D6C5EC80069260C /* 250225 */,
+				D15DD1662D717E6B0095C4A2 /* EST_MovieGallery */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D108AE362D6C5EC80069260C /* Resources */ = {
+		D15DD1652D717E6B0095C4A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15F1D732D705C380003EC2A /* tableviewcell.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D108AE342D6C5EC80069260C /* Sources */ = {
+		D15DD1632D717E6B0095C4A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,7 +165,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D108AE4C2D6C5EC90069260C /* Debug */ = {
+		D15DD17B2D717E6C0095C4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -154,10 +174,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5664C7G97A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 250225/Info.plist;
+				INFOPLIST_FILE = EST_MovieGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -165,7 +184,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ash-amad.-50225";
+				PRODUCT_BUNDLE_IDENTIFIER = "ash-amad.EST-MovieGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -173,7 +192,7 @@
 			};
 			name = Debug;
 		};
-		D108AE4D2D6C5EC90069260C /* Release */ = {
+		D15DD17C2D717E6C0095C4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -182,10 +201,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5664C7G97A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 250225/Info.plist;
+				INFOPLIST_FILE = EST_MovieGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -193,7 +211,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ash-amad.-50225";
+				PRODUCT_BUNDLE_IDENTIFIER = "ash-amad.EST-MovieGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -201,7 +219,7 @@
 			};
 			name = Release;
 		};
-		D108AE4E2D6C5EC90069260C /* Debug */ = {
+		D15DD17D2D717E6C0095C4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +282,7 @@
 			};
 			name = Debug;
 		};
-		D108AE4F2D6C5EC90069260C /* Release */ = {
+		D15DD17E2D717E6C0095C4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -323,25 +341,90 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D108AE332D6C5EC80069260C /* Build configuration list for PBXProject "250225" */ = {
+		D15DD1622D717E6B0095C4A2 /* Build configuration list for PBXProject "EST_MovieGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D108AE4E2D6C5EC90069260C /* Debug */,
-				D108AE4F2D6C5EC90069260C /* Release */,
+				D15DD17D2D717E6C0095C4A2 /* Debug */,
+				D15DD17E2D717E6C0095C4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D108AE4B2D6C5EC90069260C /* Build configuration list for PBXNativeTarget "250225" */ = {
+		D15DD17A2D717E6C0095C4A2 /* Build configuration list for PBXNativeTarget "EST_MovieGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D108AE4C2D6C5EC90069260C /* Debug */,
-				D108AE4D2D6C5EC90069260C /* Release */,
+				D15DD17B2D717E6C0095C4A2 /* Debug */,
+				D15DD17C2D717E6C0095C4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D15DD1862D7181100095C4A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		D15DD1942D7181620095C4A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D15DD1872D7181100095C4A2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD1862D7181100095C4A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D15DD1892D7181100095C4A2 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD1862D7181100095C4A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		D15DD18C2D7181410095C4A2 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		D15DD18E2D7181410095C4A2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		D15DD1902D7181410095C4A2 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		D15DD1922D7181410095C4A2 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD18B2D7181410095C4A2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		D15DD1952D7181620095C4A2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15DD1942D7181620095C4A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D108AE302D6C5EC80069260C /* Project object */;
+	rootObject = D15DD15F2D717E6B0095C4A2 /* Project object */;
 }
