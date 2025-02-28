@@ -19,22 +19,9 @@
 		D15DD1672D717E6B0095C4A2 /* EST_MovieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_MovieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D15DD1792D717E6C0095C4A2 /* Exceptions for "EST_MovieGallery" folder in "EST_MovieGallery" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D15DD1662D717E6B0095C4A2 /* EST_MovieGallery */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D15DD1692D717E6B0095C4A2 /* EST_MovieGallery */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D15DD1792D717E6C0095C4A2 /* Exceptions for "EST_MovieGallery" folder in "EST_MovieGallery" target */,
-			);
 			path = EST_MovieGallery;
 			sourceTree = "<group>";
 		};
