@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D14122212D720DF100E032C1 /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122202D720DD600E032C1 /* DailyTableViewCell.swift */; };
 		D14122232D720E5000E032C1 /* WeeklyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122222D720E4A00E032C1 /* WeeklyTableViewCell.swift */; };
-		D14122262D7433D200E032C1 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = D14122252D7433D200E032C1 /* Key.plist */; };
+		D14122262D7433D200E032C1 /* MovieKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = D14122252D7433D200E032C1 /* MovieKey.plist */; };
+		D14122282D74359400E032C1 /* Extension++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122272D74358E00E032C1 /* Extension++Bundle.swift */; };
 		D15DD20E2D718AA50095C4A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD20D2D718AA50095C4A2 /* SnapKit */; };
 		D15DD2112D718AC20095C4A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD2102D718AC20095C4A2 /* Kingfisher */; };
 		D15DD2142D718AD10095C4A2 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD2132D718AD10095C4A2 /* CombineMoya */; };
@@ -25,7 +26,7 @@
 		D15DD2782D71A0410095C4A2 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DD2772D71A03B0095C4A2 /* Extension_UIView.swift */; };
 		D15DD27A2D71A8550095C4A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DD2792D71A8520095C4A2 /* Model.swift */; };
 		D15DD27C2D71A85C0095C4A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DD27B2D71A8590095C4A2 /* Router.swift */; };
-		D15DD27E2D71A8620095C4A2 /* Networkl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DD27D2D71A85F0095C4A2 /* Networkl.swift */; };
+		D15DD27E2D71A8620095C4A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DD27D2D71A85F0095C4A2 /* Network.swift */; };
 		D15DD2892D72039A0095C4A2 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D15DD2852D72039A0095C4A2 /* Pretendard-Regular.otf */; };
 		D15DD28A2D72039A0095C4A2 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D15DD2862D72039A0095C4A2 /* Pretendard-SemiBold.otf */; };
 		D15DD28B2D72039A0095C4A2 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D15DD2832D72039A0095C4A2 /* Pretendard-Light.otf */; };
@@ -42,7 +43,8 @@
 /* Begin PBXFileReference section */
 		D14122202D720DD600E032C1 /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		D14122222D720E4A00E032C1 /* WeeklyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewCell.swift; sourceTree = "<group>"; };
-		D14122252D7433D200E032C1 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
+		D14122252D7433D200E032C1 /* MovieKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MovieKey.plist; sourceTree = "<group>"; };
+		D14122272D74358E00E032C1 /* Extension++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension++Bundle.swift"; sourceTree = "<group>"; };
 		D15DD1F42D7189760095C4A2 /* EST_MovieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_MovieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15DD25A2D719E080095C4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15DD25D2D719E080095C4A2 /* DailyMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMovieViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		D15DD2772D71A03B0095C4A2 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
 		D15DD2792D71A8520095C4A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D15DD27B2D71A8590095C4A2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		D15DD27D2D71A85F0095C4A2 /* Networkl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkl.swift; sourceTree = "<group>"; };
+		D15DD27D2D71A85F0095C4A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D15DD27F2D72039A0095C4A2 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		D15DD2802D72039A0095C4A2 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		D15DD2812D72039A0095C4A2 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 			children = (
 				D15DD2792D71A8520095C4A2 /* Model.swift */,
 				D15DD27B2D71A8590095C4A2 /* Router.swift */,
-				D15DD27D2D71A85F0095C4A2 /* Networkl.swift */,
+				D15DD27D2D71A85F0095C4A2 /* Network.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -115,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				D15DD2922D7204710095C4A2 /* DesignSystem.swift */,
-				D15DD2882D72039A0095C4A2 /* Fonts */,
 				D15DD2722D719E7F0095C4A2 /* Extension */,
+				D15DD2882D72039A0095C4A2 /* Fonts */,
 				D15DD25A2D719E080095C4A2 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -167,7 +169,7 @@
 				D15DD25C2D719E080095C4A2 /* ViewModel */,
 				D15DD2642D719E080095C4A2 /* Views */,
 				D15DD2652D719E080095C4A2 /* Info.plist */,
-				D14122252D7433D200E032C1 /* Key.plist */,
+				D14122252D7433D200E032C1 /* MovieKey.plist */,
 				D15DD2672D719E080095C4A2 /* LaunchScreen.storyboard */,
 			);
 			path = EST_MovieGallery;
@@ -176,6 +178,7 @@
 		D15DD2722D719E7F0095C4A2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D14122272D74358E00E032C1 /* Extension++Bundle.swift */,
 				D15DD2942D7204D90095C4A2 /* Extension_UIFont.swift */,
 				D15DD2772D71A03B0095C4A2 /* Extension_UIView.swift */,
 				D15DD2752D719EA20095C4A2 /* Extension_UITabBar.swift */,
@@ -277,7 +280,7 @@
 				D15DD28E2D72039A0095C4A2 /* Pretendard-Bold.otf in Resources */,
 				D15DD28F2D72039A0095C4A2 /* Pretendard-Black.otf in Resources */,
 				D15DD2902D72039A0095C4A2 /* Pretendard-Thin.otf in Resources */,
-				D14122262D7433D200E032C1 /* Key.plist in Resources */,
+				D14122262D7433D200E032C1 /* MovieKey.plist in Resources */,
 				D15DD2912D72039A0095C4A2 /* Pretendard-Medium.otf in Resources */,
 				D15DD2692D719E080095C4A2 /* Assets.xcassets in Resources */,
 				D15DD26B2D719E080095C4A2 /* LaunchScreen.storyboard in Resources */,
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14122282D74359400E032C1 /* Extension++Bundle.swift in Sources */,
 				D15DD26C2D719E080095C4A2 /* DailyMovieViewController.swift in Sources */,
 				D15DD26D2D719E080095C4A2 /* WeeklyMovieViewContoller.swift in Sources */,
 				D15DD2952D7204E20095C4A2 /* Extension_UIFont.swift in Sources */,
@@ -302,7 +306,7 @@
 				D14122232D720E5000E032C1 /* WeeklyTableViewCell.swift in Sources */,
 				D14122212D720DF100E032C1 /* DailyTableViewCell.swift in Sources */,
 				D15DD2932D7204760095C4A2 /* DesignSystem.swift in Sources */,
-				D15DD27E2D71A8620095C4A2 /* Networkl.swift in Sources */,
+				D15DD27E2D71A8620095C4A2 /* Network.swift in Sources */,
 				D15DD2702D719E080095C4A2 /* SceneDelegate.swift in Sources */,
 				D15DD27A2D71A8550095C4A2 /* Model.swift in Sources */,
 			);

@@ -5,10 +5,12 @@
 //  Created by 안세훈 on 2/28/25.
 //
 
-import Foundation
+import UIKit
 import Moya
 
 var BaseURL : String = "http://kobis.or.kr/kobisopenapi/webservice/rest/"
+
+var Key : String = Bundle.main.MovieKey
 
 enum Router{
     case getDailyMovie
@@ -18,26 +20,26 @@ enum Router{
 }
 
 //extension Router: TargetType {
-//    
+//
 //    var baseURL: URL {
 //        URL(string : BaseURL)!
 //    }
-//    
+//
 //    var path: String {
 //        <#code#>
 //    }
-//    
+//
 //    var method: Moya.Method {
 //        <#code#>
 //    }
-//    
+//
 //    var task: Moya.Task {
 //        <#code#>
 //    }
-//    
+//
 //    var headers: [String : String]? {
 //        <#code#>
 //    }
-//    
-//    
+//
+//
 //}
