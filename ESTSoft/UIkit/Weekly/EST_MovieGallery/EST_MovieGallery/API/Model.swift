@@ -11,8 +11,8 @@ import UIKit
 struct DailyModelRequest : Codable{
     
 }
-
 struct DailyModelResponse: Codable{
+    
 }
 
 //MARK: - Weekly

@@ -11,8 +11,9 @@ import Moya
 
 class DailyViewController : UIViewController {
     
-    //MARK: - Properties
+    let dailyMovie
     
+    //MARK: - Properties
     private let titleLabel : UILabel = {
         let label = UILabel()
         label.text = "일별 박스 오피스"
@@ -29,6 +30,7 @@ class DailyViewController : UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         view.backgroundColor = .white
+        self.navigationController?.navigationBar.isHidden = true
         SetUI()
         SetTable()
     }

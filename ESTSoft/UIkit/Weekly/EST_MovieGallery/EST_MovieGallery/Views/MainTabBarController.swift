@@ -12,7 +12,7 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+
         view.backgroundColor = .gray
         SetupTabbar()
         SetupViews()
@@ -42,12 +42,12 @@ class MainTabBarController: UITabBarController {
         self.selectedIndex = 0
     }
     
-    //MARK: - VC + TabbarItem에 navigationContoller맥이기
+    //MARK: - VC + TabbarItem에 navigationContoller 맥이기 + 네비게이션바는 지우기
     fileprivate func generateNavController(vc: UIViewController, tabBarItem: UITabBarItem) -> UINavigationController {
         
         let navController = UINavigationController(rootViewController: vc)
         navController.tabBarItem = tabBarItem
-        
+        navController.navigationBar.isHidden = true
         return navController
     }
     

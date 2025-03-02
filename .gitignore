@@ -85,6 +85,7 @@ fastlane/test_output
 
 Info.plist
 .DS_STORE
+Key.plist
 
 # Code Injection
 #
