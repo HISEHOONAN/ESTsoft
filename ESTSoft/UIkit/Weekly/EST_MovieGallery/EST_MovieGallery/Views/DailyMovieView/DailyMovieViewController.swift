@@ -8,10 +8,13 @@
 import UIKit
 import SnapKit
 import Moya
+import Combine
 
 class DailyViewController : UIViewController {
     
-    let dailyMovie
+    private var cancellables: Set<AnyCancellable> = []
+    private let viewModel = ViewModel.shared
+    
     
     //MARK: - Properties
     private let titleLabel : UILabel = {
@@ -33,7 +36,21 @@ class DailyViewController : UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         SetUI()
         SetTable()
+        getDaily()
     }
+    
+    //MARK: - API
+    func getDaily(){
+        viewModel.$DailyMovieList
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.dailyTableView.reloadData()
+                
+            }
+            .store(in: &cancellables)
+        
+    }
+    
     
     //MARK: - SETUI
     private func SetTable(){

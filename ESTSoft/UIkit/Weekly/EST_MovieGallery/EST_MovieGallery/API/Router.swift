@@ -8,38 +8,67 @@
 import UIKit
 import Moya
 
-var BaseURL : String = "http://kobis.or.kr/kobisopenapi/webservice/rest/"
+var BaseURL : String = "http://kobis.or.kr/kobisopenapi/webservice/rest"
 
-var Key : String = Bundle.main.MovieKey
+var APIKEY : String = Bundle.main.MovieKey
 
 enum Router{
-    case getDailyMovie
-    case getWeeklyMovie
-    case getMovieList
-    case getDetailMovie
+    case getDailyMovie(targetDt : String)
+    case getWeeklyMovie(targetDt : String)
+    case getMovieList(curPage : Int)
+    case getDetailMovie(movieCd : String)
 }
 
-//extension Router: TargetType {
-//
-//    var baseURL: URL {
-//        URL(string : BaseURL)!
-//    }
-//
-//    var path: String {
-//        <#code#>
-//    }
-//
-//    var method: Moya.Method {
-//        <#code#>
-//    }
-//
-//    var task: Moya.Task {
-//        <#code#>
-//    }
-//
-//    var headers: [String : String]? {
-//        <#code#>
-//    }
-//
-//
-//}
+extension Router: TargetType {
+    
+    var baseURL: URL {
+        URL(string : BaseURL)!
+    }
+    
+    var path: String {
+        switch self{
+        case .getDailyMovie: return "/boxoffice/searchDailyBoxOfficeList.json"
+        case .getWeeklyMovie: return "/boxoffice/searchWeeklyBoxOfficeList.json"
+        case .getMovieList: return "/boxoffice/searchMovieList.json"
+        case .getDetailMovie: return "/boxoffice/searchMovieInfo.json"
+        }
+    }
+    
+    var method: Moya.Method {
+        return .get
+    }
+    
+    var task: Moya.Task {
+        switch self {
+        case .getDailyMovie(let targetDate):
+            return .requestParameters(parameters: [
+                "key": APIKEY,
+                "targetDt": targetDate
+            ], encoding: URLEncoding.default)
+            
+        case .getWeeklyMovie(let targetDate):
+            return .requestParameters(parameters: [
+                "key": APIKEY,
+                "targetDt": targetDate
+            ], encoding: URLEncoding.default)
+            
+        case .getMovieList(let page):
+            return .requestParameters(parameters: [
+                "key": APIKEY,
+                "curPage": page
+            ], encoding: URLEncoding.default)
+            
+        case .getDetailMovie(let movieCd):
+            return .requestParameters(parameters: [
+                "key": APIKEY,
+                "movieCd": movieCd
+            ], encoding: URLEncoding.default)
+        }
+    }
+    
+    var headers: [String : String]? {
+        return ["Content-type": "application/json"]
+    }
+    
+    
+}

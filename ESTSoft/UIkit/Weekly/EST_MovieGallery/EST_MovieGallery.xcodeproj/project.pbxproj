@@ -11,6 +11,7 @@
 		D14122232D720E5000E032C1 /* WeeklyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122222D720E4A00E032C1 /* WeeklyTableViewCell.swift */; };
 		D14122262D7433D200E032C1 /* MovieKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = D14122252D7433D200E032C1 /* MovieKey.plist */; };
 		D14122282D74359400E032C1 /* Extension++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122272D74358E00E032C1 /* Extension++Bundle.swift */; };
+		D141222A2D74AFEE00E032C1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14122292D74AFE900E032C1 /* ViewModel.swift */; };
 		D15DD20E2D718AA50095C4A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD20D2D718AA50095C4A2 /* SnapKit */; };
 		D15DD2112D718AC20095C4A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD2102D718AC20095C4A2 /* Kingfisher */; };
 		D15DD2142D718AD10095C4A2 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D15DD2132D718AD10095C4A2 /* CombineMoya */; };
@@ -45,6 +46,7 @@
 		D14122222D720E4A00E032C1 /* WeeklyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewCell.swift; sourceTree = "<group>"; };
 		D14122252D7433D200E032C1 /* MovieKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MovieKey.plist; sourceTree = "<group>"; };
 		D14122272D74358E00E032C1 /* Extension++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension++Bundle.swift"; sourceTree = "<group>"; };
+		D14122292D74AFE900E032C1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D15DD1F42D7189760095C4A2 /* EST_MovieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_MovieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15DD25A2D719E080095C4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15DD25D2D719E080095C4A2 /* DailyMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMovieViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		D15DD25C2D719E080095C4A2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D14122292D74AFE900E032C1 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				D15DD2952D7204E20095C4A2 /* Extension_UIFont.swift in Sources */,
 				D15DD2782D71A0410095C4A2 /* Extension_UIView.swift in Sources */,
 				D15DD26E2D719E080095C4A2 /* AppDelegate.swift in Sources */,
+				D141222A2D74AFEE00E032C1 /* ViewModel.swift in Sources */,
 				D15DD27C2D71A85C0095C4A2 /* Router.swift in Sources */,
 				D15DD2762D719EA90095C4A2 /* Extension_UITabBar.swift in Sources */,
 				D15DD26F2D719E080095C4A2 /* MainTabBarController.swift in Sources */,

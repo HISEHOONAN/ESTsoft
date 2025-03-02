@@ -10,7 +10,7 @@ import Foundation
 extension Bundle {
     
     var MovieKey: String {
-        guard let file = Bundle.main.path(forResource: "Key", ofType: "plist") else {
+        guard let file = Bundle.main.path(forResource: "MovieKey", ofType: "plist") else {
             fatalError("Key.plist not found")
         }
         
