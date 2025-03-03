@@ -15,13 +15,30 @@ class Network {
     
     private let provider = MoyaProvider<Router>()
     
-    func getDailyMovie() -> AnyPublisher<DailyModelResponse, Error> { //값을 모델 혹은 에러로 리턴
-        return provider.requestPublisher(.getDailyMovie(targetDt: "20250302")) //네트워킹 요청
+    //MARK: - 데일리
+    func getDailyMovie(targetDt : String) -> AnyPublisher<DailyModelResponse, Error> {
+        return provider.requestPublisher(.getDailyMovie(targetDt: targetDt))
             .tryMap { response in
                 try response.map(DailyModelResponse.self)
             }
-            .eraseToAnyPublisher() //반환타입을 Publisher로 바꿈
+            .eraseToAnyPublisher()
     }
     
+    //MARK: - 위클리
+    func getWeeklyMovie(targetDt : String) -> AnyPublisher<WeeklyModelResponse, Error> {
+        return provider.requestPublisher(.getWeeklyMovie(targetDt: targetDt))
+            .tryMap{ response in
+                try response.map(WeeklyModelResponse.self)
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    //MARK: - 영화 상세 정보
+    func getDetailMovie(movieCd : String) -> AnyPublisher<DetailMovieResponse, Error> {
+        return provider.requestPublisher(.getDetailMovie(movieCd: movieCd))
+            .tryMap { response in
+                try response.map(DetailMovieResponse.self)
+            }
+            .eraseToAnyPublisher()
+    }
 }
-

@@ -80,7 +80,6 @@ struct DetailMovieRequest: Codable {
     let movieCd: String
 }
 //MARK: - 영화 상세보기 응답
-
 struct DetailMovieResponse: Codable {
     let movieInfoResult: MovieInfoResult
 }

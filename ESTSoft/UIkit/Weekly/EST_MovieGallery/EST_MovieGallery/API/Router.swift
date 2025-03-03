@@ -30,7 +30,7 @@ extension Router: TargetType {
         case .getDailyMovie: return "/boxoffice/searchDailyBoxOfficeList.json"
         case .getWeeklyMovie: return "/boxoffice/searchWeeklyBoxOfficeList.json"
         case .getMovieList: return "/boxoffice/searchMovieList.json"
-        case .getDetailMovie: return "/boxoffice/searchMovieInfo.json"
+        case .getDetailMovie: return "/movie/searchMovieInfo.json"
         }
     }
     
