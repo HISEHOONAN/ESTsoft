@@ -16,7 +16,6 @@ class DailyViewController : UIViewController {
     
     private let viewModel = ViewModel.shared
     
-    
     //MARK: - Properties
     private let titleLabel : UILabel = {
         let label = UILabel()
@@ -81,6 +80,7 @@ class DailyViewController : UIViewController {
     }
     
     private func SetUI(){
+        
         view.addSubviews(titleLabel,dailyTableView,datePicker,emptyLabel)
         
         titleLabel.snp.makeConstraints{
@@ -139,6 +139,7 @@ extension DailyViewController : UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DailyTableViewCell", for: indexPath) as? DailyTableViewCell else { return UITableViewCell() }
+        
         cell.selectionStyle = .none
         
         cell.movieLabel.text = viewModel.DailyMovieList[indexPath.row].movieNm

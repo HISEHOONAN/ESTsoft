@@ -96,7 +96,7 @@ class WeeklyViewContoller : UIViewController {
         if viewModel.WeeklyMovieList.isEmpty{
             weeklyTableView.isHidden = true
             emptyLabel.isHidden = false
-
+            
         }else{
             emptyLabel.isHidden = true
             weeklyTableView.isHidden = false
@@ -145,7 +145,10 @@ extension WeeklyViewContoller : UITableViewDataSource,UITableViewDelegate {
         cell.movieLabel.text = viewModel.WeeklyMovieList[indexPath.row].movieNm
         cell.RankLabel.text = viewModel.WeeklyMovieList[indexPath.row].rank
         if viewModel.WeeklyMovieList[indexPath.row].rankOldAndNew.rawValue != "OLD" {
+            cell.newLabel.isHidden = false
             cell.newLabel.text = "NEW"
+        }else{
+            cell.newLabel.isHidden = true
         }
         cell.openDtLabel.text = "개봉일 : " + viewModel.WeeklyMovieList[indexPath.row].openDt
         
@@ -157,12 +160,12 @@ extension WeeklyViewContoller : UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.getDetailMovie(movieCd: viewModel.WeeklyMovieList[indexPath.row].movieCD) {
-                DispatchQueue.main.async {
-                    let vc = DetailViewController()
-                    self.navigationController?.pushViewController(vc, animated: true)
-                }
+        viewModel.getDetailMovie(movieCd: viewModel.WeeklyMovieList[indexPath.row].movieCD){
+            DispatchQueue.main.async {
+                let vc = DetailViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
+        }
     }
 }
 

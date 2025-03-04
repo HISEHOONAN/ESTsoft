@@ -54,10 +54,8 @@ class DailyTableViewCell : UITableViewCell {
     }()
     
     //MARK: - Lift Cycle
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

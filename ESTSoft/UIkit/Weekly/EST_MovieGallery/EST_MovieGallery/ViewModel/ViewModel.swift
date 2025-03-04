@@ -71,7 +71,7 @@ class ViewModel : ObservableObject {
                 case .failure(let error):
                     print("\(error.localizedDescription)")
                 case .finished:
-                    completion() // ✅ API가 성공적으로 끝나면 completion 실행
+                    completion() 
                 }
             }, receiveValue: { response in
                 self.DetailMovielist = response.movieInfoResult.movieInfo

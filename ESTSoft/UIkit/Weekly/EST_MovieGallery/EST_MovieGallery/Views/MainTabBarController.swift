@@ -29,8 +29,7 @@ class MainTabBarController: UITabBarController {
         //탭바 아이템
         let dailytabBar = UITabBarItem(title: "일별 박스오피스", image: UIImage(systemName: "popcorn"), selectedImage: UIImage(systemName: "popcorn.fill"))
         
-        let weeklytabBar = UITabBarItem(title: "주간 박스오피스", image:     UIImage(systemName: "movieclapper"), selectedImage:     UIImage(systemName: "movieclapper.fill"))
-        
+        let weeklytabBar = UITabBarItem(title: "주간 박스오피스", image: UIImage(systemName: "movieclapper"), selectedImage:UIImage(systemName: "movieclapper.fill"))
         
         //탭바 연결
         let dailyVC = generateNavController(vc: DailyViewController(), tabBarItem: dailytabBar)
