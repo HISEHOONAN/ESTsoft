@@ -233,15 +233,25 @@ import Combine
 //    sleep(3)
 //    print("Third operation completed.")
 //}
-class MonitorObject: ObservableObject {
-    @Published var someProperty = false
-    @Published var someOtherProperty = ""
-}
+//class MonitorObject: ObservableObject {
+//    @Published var someProperty = false
+//    @Published var someOtherProperty = ""
+//}
+//
+//let object = MonitorObject()
+//let subscription = object.objectWillChange.sink {
+//    print("object will change")
+//}
+//
+//object.someProperty = true
+//object.someOtherProperty = "Hello world"
+//1초마다 주기적으로 값을 방출.\
 
-let object = MonitorObject()
-let subscription = object.objectWillChange.sink {
-    print("object will change")
-}
-
-object.someProperty = true
-object.someOtherProperty = "Hello world"
+//let source = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+//
+////2초마다 생산된 값을 또 방출
+//let delayed = source
+//            .delay(for: .seconds(2), scheduler: DispatchQueue.main)
+//
+//let sub1 = source.sink { print("⚪ Emitting: \($0)") }
+//let sub2 = delayed.sink { print("🔵 Delayed: \($0)") }

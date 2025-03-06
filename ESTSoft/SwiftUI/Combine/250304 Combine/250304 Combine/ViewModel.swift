@@ -30,6 +30,7 @@ class ViewModel : ObservableObject {
                     print("Error: \(error.localizedDescription)")
                 case .finished:
                     print("Finished fetching advice")
+                    
                 }
             }, receiveValue: { [weak self] response in
                 
