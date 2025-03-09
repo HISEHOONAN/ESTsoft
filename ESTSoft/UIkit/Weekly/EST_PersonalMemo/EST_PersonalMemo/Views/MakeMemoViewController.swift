@@ -1,5 +1,5 @@
 //
-//  MemoDetailViewController.swift
+//  MakeMemoViewController.swift
 //  EST_PersonalMemo
 //
 //  Created by 안세훈 on 3/9/25.
@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import PhotosUI
 
-class MemoDetailViewController: UIViewController {
+class MakeMemoViewController: UIViewController {
     
     // MARK: - Properties
     private var viewModel: MemoViewModel
@@ -254,7 +254,7 @@ class MemoDetailViewController: UIViewController {
 }
 
 // MARK: - PHPickerViewControllerDelegate
-extension MemoDetailViewController: PHPickerViewControllerDelegate {
+extension MakeMemoViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true)
         

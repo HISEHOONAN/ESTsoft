@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D14D78572D7DB70B009C00DE /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */; };
+		D14D78572D7DB70B009C00DE /* MakeMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D78562D7DB701009C00DE /* MakeMemoViewController.swift */; };
 		D186D3232D7AC916001F611B /* Extension_UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D30A2D7AC916001F611B /* Extension_UIFont.swift */; };
 		D186D3242D7AC916001F611B /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D30B2D7AC916001F611B /* Extension_UIView.swift */; };
 		D186D3252D7AC916001F611B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D3182D7AC916001F611B /* DesignSystem.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		D14D78562D7DB701009C00DE /* MakeMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeMemoViewController.swift; sourceTree = "<group>"; };
 		D186D2D22D7ABD75001F611B /* EST_PersonalMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_PersonalMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D186D30A2D7AC916001F611B /* Extension_UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIFont.swift; sourceTree = "<group>"; };
 		D186D30B2D7AC916001F611B /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		D186D31E2D7AC916001F611B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */,
+				D14D78562D7DB701009C00DE /* MakeMemoViewController.swift */,
 				D186D33A2D7C2C73001F611B /* MemoTableViewCell.swift */,
 				D186D31B2D7AC916001F611B /* AppDelegate.swift */,
 				D186D31C2D7AC916001F611B /* SceneDelegate.swift */,
@@ -253,7 +253,7 @@
 				D186D3232D7AC916001F611B /* Extension_UIFont.swift in Sources */,
 				D186D3242D7AC916001F611B /* Extension_UIView.swift in Sources */,
 				D186D33B2D7C2C7A001F611B /* MemoTableViewCell.swift in Sources */,
-				D14D78572D7DB70B009C00DE /* MemoDetailViewController.swift in Sources */,
+				D14D78572D7DB70B009C00DE /* MakeMemoViewController.swift in Sources */,
 				D186D3252D7AC916001F611B /* DesignSystem.swift in Sources */,
 				D186D3262D7AC916001F611B /* AppDelegate.swift in Sources */,
 				D186D3272D7AC916001F611B /* SceneDelegate.swift in Sources */,

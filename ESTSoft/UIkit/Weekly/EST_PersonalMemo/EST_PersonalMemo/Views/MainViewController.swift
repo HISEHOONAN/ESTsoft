@@ -175,7 +175,7 @@ class MainViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func addMemoTapped() {
-        let detailVC = MemoDetailViewController(viewModel: viewModel)
+        let detailVC = MakeMemoViewController(viewModel: viewModel)
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
@@ -248,7 +248,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let memo = viewModel.filteredMemos[indexPath.row]
-        let detailVC = MemoDetailViewController(viewModel: viewModel, existingMemo: memo)
+        let detailVC = MakeMemoViewController(viewModel: viewModel, existingMemo: memo)
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
