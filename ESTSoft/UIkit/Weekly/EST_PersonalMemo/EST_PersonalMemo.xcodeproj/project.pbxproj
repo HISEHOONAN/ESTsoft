@@ -6,36 +6,63 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D14D78572D7DB70B009C00DE /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */; };
+		D186D3232D7AC916001F611B /* Extension_UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D30A2D7AC916001F611B /* Extension_UIFont.swift */; };
+		D186D3242D7AC916001F611B /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D30B2D7AC916001F611B /* Extension_UIView.swift */; };
+		D186D3252D7AC916001F611B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D3182D7AC916001F611B /* DesignSystem.swift */; };
+		D186D3262D7AC916001F611B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D31B2D7AC916001F611B /* AppDelegate.swift */; };
+		D186D3272D7AC916001F611B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D31C2D7AC916001F611B /* SceneDelegate.swift */; };
+		D186D3282D7AC916001F611B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D31D2D7AC916001F611B /* MainViewController.swift */; };
+		D186D3292D7AC916001F611B /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D30D2D7AC916001F611B /* Pretendard-Black.otf */; };
+		D186D32A2D7AC916001F611B /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D30E2D7AC916001F611B /* Pretendard-Bold.otf */; };
+		D186D32B2D7AC916001F611B /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D30F2D7AC916001F611B /* Pretendard-ExtraBold.otf */; };
+		D186D32C2D7AC916001F611B /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3102D7AC916001F611B /* Pretendard-ExtraLight.otf */; };
+		D186D32D2D7AC916001F611B /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3112D7AC916001F611B /* Pretendard-Light.otf */; };
+		D186D32E2D7AC916001F611B /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3122D7AC916001F611B /* Pretendard-Medium.otf */; };
+		D186D32F2D7AC916001F611B /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3132D7AC916001F611B /* Pretendard-Regular.otf */; };
+		D186D3302D7AC916001F611B /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3142D7AC916001F611B /* Pretendard-SemiBold.otf */; };
+		D186D3312D7AC916001F611B /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D186D3152D7AC916001F611B /* Pretendard-Thin.otf */; };
+		D186D3322D7AC916001F611B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D186D3172D7AC916001F611B /* Assets.xcassets */; };
+		D186D3342D7AC916001F611B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D186D3212D7AC916001F611B /* LaunchScreen.storyboard */; };
+		D186D3372D7ACADD001F611B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D186D3362D7ACADD001F611B /* SnapKit */; };
+		D186D3392D7ACB04001F611B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D3382D7ACB02001F611B /* Model.swift */; };
+		D186D33B2D7C2C7A001F611B /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D33A2D7C2C73001F611B /* MemoTableViewCell.swift */; };
+		D186D33F2D7C3792001F611B /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186D33E2D7C378F001F611B /* MemoViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
 		D186D2D22D7ABD75001F611B /* EST_PersonalMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EST_PersonalMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D186D30A2D7AC916001F611B /* Extension_UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIFont.swift; sourceTree = "<group>"; };
+		D186D30B2D7AC916001F611B /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		D186D30D2D7AC916001F611B /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		D186D30E2D7AC916001F611B /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		D186D30F2D7AC916001F611B /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		D186D3102D7AC916001F611B /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		D186D3112D7AC916001F611B /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		D186D3122D7AC916001F611B /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		D186D3132D7AC916001F611B /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		D186D3142D7AC916001F611B /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		D186D3152D7AC916001F611B /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		D186D3172D7AC916001F611B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D186D3182D7AC916001F611B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		D186D31B2D7AC916001F611B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D186D31C2D7AC916001F611B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D186D31D2D7AC916001F611B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D186D31F2D7AC916001F611B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D186D3202D7AC916001F611B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D186D3382D7ACB02001F611B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D186D33A2D7C2C73001F611B /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		D186D33E2D7C378F001F611B /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D186D2E42D7ABD76001F611B /* Exceptions for "EST_PersonalMemo" folder in "EST_PersonalMemo" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D186D2D12D7ABD75001F611B /* EST_PersonalMemo */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D186D2D42D7ABD75001F611B /* EST_PersonalMemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D186D2E42D7ABD76001F611B /* Exceptions for "EST_PersonalMemo" folder in "EST_PersonalMemo" target */,
-			);
-			path = EST_PersonalMemo;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D186D2CF2D7ABD75001F611B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D186D3372D7ACADD001F611B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +72,7 @@
 		D186D2C92D7ABD75001F611B = {
 			isa = PBXGroup;
 			children = (
-				D186D2D42D7ABD75001F611B /* EST_PersonalMemo */,
+				D186D3222D7AC916001F611B /* EST_PersonalMemo */,
 				D186D2D32D7ABD75001F611B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +83,83 @@
 				D186D2D22D7ABD75001F611B /* EST_PersonalMemo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D186D3092D7AC916001F611B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D186D3382D7ACB02001F611B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D186D30C2D7AC916001F611B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D186D30A2D7AC916001F611B /* Extension_UIFont.swift */,
+				D186D30B2D7AC916001F611B /* Extension_UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D186D3162D7AC916001F611B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D186D30D2D7AC916001F611B /* Pretendard-Black.otf */,
+				D186D30E2D7AC916001F611B /* Pretendard-Bold.otf */,
+				D186D30F2D7AC916001F611B /* Pretendard-ExtraBold.otf */,
+				D186D3102D7AC916001F611B /* Pretendard-ExtraLight.otf */,
+				D186D3112D7AC916001F611B /* Pretendard-Light.otf */,
+				D186D3122D7AC916001F611B /* Pretendard-Medium.otf */,
+				D186D3132D7AC916001F611B /* Pretendard-Regular.otf */,
+				D186D3142D7AC916001F611B /* Pretendard-SemiBold.otf */,
+				D186D3152D7AC916001F611B /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D186D3192D7AC916001F611B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D186D30C2D7AC916001F611B /* Extensions */,
+				D186D3162D7AC916001F611B /* Fonts */,
+				D186D3172D7AC916001F611B /* Assets.xcassets */,
+				D186D3182D7AC916001F611B /* DesignSystem.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D186D31A2D7AC916001F611B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D186D33E2D7C378F001F611B /* MemoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D186D31E2D7AC916001F611B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D14D78562D7DB701009C00DE /* MemoDetailViewController.swift */,
+				D186D33A2D7C2C73001F611B /* MemoTableViewCell.swift */,
+				D186D31B2D7AC916001F611B /* AppDelegate.swift */,
+				D186D31C2D7AC916001F611B /* SceneDelegate.swift */,
+				D186D31D2D7AC916001F611B /* MainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D186D3222D7AC916001F611B /* EST_PersonalMemo */ = {
+			isa = PBXGroup;
+			children = (
+				D186D3092D7AC916001F611B /* Model */,
+				D186D31A2D7AC916001F611B /* ViewModel */,
+				D186D31E2D7AC916001F611B /* Views */,
+				D186D3192D7AC916001F611B /* Resources */,
+				D186D31F2D7AC916001F611B /* Info.plist */,
+				D186D3212D7AC916001F611B /* LaunchScreen.storyboard */,
+			);
+			path = EST_PersonalMemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,11 +177,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				D186D2D42D7ABD75001F611B /* EST_PersonalMemo */,
-			);
 			name = EST_PersonalMemo;
 			packageProductDependencies = (
+				D186D3362D7ACADD001F611B /* SnapKit */,
 			);
 			productName = EST_PersonalMemo;
 			productReference = D186D2D22D7ABD75001F611B /* EST_PersonalMemo.app */;
@@ -107,6 +209,9 @@
 			);
 			mainGroup = D186D2C92D7ABD75001F611B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D186D3352D7ACADD001F611B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D186D2D32D7ABD75001F611B /* Products */;
 			projectDirPath = "";
@@ -122,6 +227,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D186D3292D7AC916001F611B /* Pretendard-Black.otf in Resources */,
+				D186D32A2D7AC916001F611B /* Pretendard-Bold.otf in Resources */,
+				D186D32B2D7AC916001F611B /* Pretendard-ExtraBold.otf in Resources */,
+				D186D32C2D7AC916001F611B /* Pretendard-ExtraLight.otf in Resources */,
+				D186D32D2D7AC916001F611B /* Pretendard-Light.otf in Resources */,
+				D186D32E2D7AC916001F611B /* Pretendard-Medium.otf in Resources */,
+				D186D32F2D7AC916001F611B /* Pretendard-Regular.otf in Resources */,
+				D186D3302D7AC916001F611B /* Pretendard-SemiBold.otf in Resources */,
+				D186D3312D7AC916001F611B /* Pretendard-Thin.otf in Resources */,
+				D186D3322D7AC916001F611B /* Assets.xcassets in Resources */,
+				D186D3342D7AC916001F611B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +248,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D186D3392D7ACB04001F611B /* Model.swift in Sources */,
+				D186D33F2D7C3792001F611B /* MemoViewModel.swift in Sources */,
+				D186D3232D7AC916001F611B /* Extension_UIFont.swift in Sources */,
+				D186D3242D7AC916001F611B /* Extension_UIView.swift in Sources */,
+				D186D33B2D7C2C7A001F611B /* MemoTableViewCell.swift in Sources */,
+				D14D78572D7DB70B009C00DE /* MemoDetailViewController.swift in Sources */,
+				D186D3252D7AC916001F611B /* DesignSystem.swift in Sources */,
+				D186D3262D7AC916001F611B /* AppDelegate.swift in Sources */,
+				D186D3272D7AC916001F611B /* SceneDelegate.swift in Sources */,
+				D186D3282D7AC916001F611B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D186D3212D7AC916001F611B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D186D3202D7AC916001F611B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D186D2E62D7ABD76001F611B /* Debug */ = {
@@ -333,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D186D3352D7ACADD001F611B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D186D3362D7ACADD001F611B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D186D3352D7ACADD001F611B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D186D2CA2D7ABD75001F611B /* Project object */;
 }
