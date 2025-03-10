@@ -121,6 +121,8 @@
 		D186D3192D7AC916001F611B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D186D31C2D7AC916001F611B /* SceneDelegate.swift */,
+				D186D31B2D7AC916001F611B /* AppDelegate.swift */,
 				D186D30C2D7AC916001F611B /* Extensions */,
 				D186D3162D7AC916001F611B /* Fonts */,
 				D186D3172D7AC916001F611B /* Assets.xcassets */,
@@ -142,8 +144,6 @@
 			children = (
 				D14D78562D7DB701009C00DE /* MakeMemoViewController.swift */,
 				D186D33A2D7C2C73001F611B /* MemoTableViewCell.swift */,
-				D186D31B2D7AC916001F611B /* AppDelegate.swift */,
-				D186D31C2D7AC916001F611B /* SceneDelegate.swift */,
 				D186D31D2D7AC916001F611B /* MainViewController.swift */,
 			);
 			path = Views;

@@ -131,7 +131,8 @@ class MemoTableViewCell: UITableViewCell {
             }
         }
     }
-    
+    //MARK: - 재사용 준비
+
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil

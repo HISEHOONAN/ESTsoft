@@ -14,8 +14,7 @@ class MainViewController: UIViewController {
     // MARK: - Properties
     private var viewModel = MemoViewModel()
     private var cancellables = Set<AnyCancellable>()
-    
-    // MARK: - UI Components
+
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "메모"
@@ -146,12 +145,17 @@ class MainViewController: UIViewController {
         updateDateButtonTitle()
     }
     
+    //MARK: - TableView SET
+
     private func tableSetup() {
         memoTableView.delegate = self
         memoTableView.dataSource = self
         memoTableView.register(MemoTableViewCell.self, forCellReuseIdentifier: "memoTableViewCell")
     }
     
+    
+    //MARK: - Combine
+
     private func setupBindings() {
         // Bind search text field to view model
         searchTextField.textPublisher()
