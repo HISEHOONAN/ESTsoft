@@ -255,3 +255,136 @@ import Combine
 //
 //let sub1 = source.sink { print("⚪ Emitting: \($0)") }
 //let sub2 = delayed.sink { print("🔵 Delayed: \($0)") }
+// 1️⃣ 새로운 Publisher 생성
+//let subject = PassthroughSubject<Int, Never>()
+//
+//// 2️⃣ 공유하지 않는 기본 Publisher
+//let publisher = subject
+//    .map { value -> String in
+//        print("📡 변환 수행: \(value)")
+//        return "값: \(value)"
+//    }
+//
+//// 3️⃣ 공유하는 Publisher
+//let sharedPublisher = publisher.share()
+//
+//// 4️⃣ 첫 번째 구독자
+//print("🔵 첫 번째 구독 시작")
+//let subscription1 = sharedPublisher.sink { print("🔵 첫 번째 구독자: \($0)") }
+//
+//// 5️⃣ 두 번째 구독자
+//print("🟢 두 번째 구독 시작")
+//let subscription2 = sharedPublisher.sink { print("🟢 두 번째 구독자: \($0)") }
+//
+//// 6️⃣ 값 전송
+//subject.send(1)
+//subject.send(2)
+
+//var subscriptions = [AnyCancellable]() // 구독을 저장할 배열
+//
+//// 비동기 작업을 수행하는 Future 생성
+//func fetchData() -> Future<String, Never> {
+//    return Future { promise in
+//        print("📡 [Future] 데이터 요청 중...")
+//
+//        // 2초 후 데이터 제공
+//        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+//            let result = "✅ 데이터 로드 완료!"
+//            print("📡 [Future] 데이터 준비 완료: \(result)")
+//            promise(.success(result))
+//        }
+//    }
+//}
+//
+//// Future 생성
+//print("🌍 Future 생성 중...")
+//let future = fetchData()
+//
+//// 첫 번째 구독
+//print("🔵 첫 번째 구독 시작")
+//let subscription1 = future.sink { value in
+//    print("🔵 첫 번째 구독자 수신: \(value)")
+//}
+//subscriptions.append(subscription1) // 구독 유지
+//
+//// 1초 후 두 번째 구독
+//DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//    print("🟢 두 번째 구독 시작")
+//    let subscription2 = future.sink { value in
+//        print("🟢 두 번째 구독자 수신: \(value)")
+//    }
+//    subscriptions.append(subscription2) // 두 번째 구독 유지
+//}
+
+
+//let publisher = Just("✅ 성공적인 데이터") // Just는 에러가 없으므로 Never 사용
+//
+//let subscription = publisher.sink(
+//    receiveCompletion: { print("🔚 완료: \($0)") },
+//    receiveValue: { print("📦 값: \($0)") }
+//)
+
+
+//let publisher = Just("✅ 정상 데이터")
+//    .assertNoFailure() // 퍼블리셔가 실패하면 크래시 발생
+//
+//let subscription = publisher.sink(
+//    receiveCompletion: { print("🔚 완료: \($0)") },
+//    receiveValue: { print("📦 값: \($0)") }
+//)
+
+//enum APIError: Error {
+//    case serverError
+//}
+//
+//enum AppError: Error {
+//    case userFriendlyError
+//}
+//
+//// 기존 퍼블리셔에서 발생하는 에러 타입 변환
+//let publisher = Fail<String, APIError>(error: .serverError)
+//    .mapError { _ in AppError.userFriendlyError } // 에러 변환
+//
+//let subscription = publisher.sink(
+//    receiveCompletion: { print("🔚 완료: \($0)") },
+//    receiveValue: { print("📦 값: \($0)") }
+//)
+//let customQueue = DispatchQueue(label: "com.example.customQueue")
+//
+//let publisher = Future<String, Never> { promise in
+//    print("📡 데이터 생성 중... (현재 스레드: \(Thread.current))")
+//    promise(.success("✅ 데이터 준비 완료!"))
+//}
+//.subscribe(on: customQueue, options: nil) // 특정 큐에서 실행 예약
+//
+//let subscription = publisher
+//    .receive(on: DispatchQueue.main) // UI 업데이트는 메인 스레드에서
+//    .sink(
+//        receiveCompletion: { print("🔚 완료: \($0)") },
+//        receiveValue: { print("📦 값: \($0) (현재 스레드: \(Thread.current))") }
+//    )
+//let publisher = Just("✅ 성공적인 데이터") // Just는 에러가 없으므로 Never 사용
+//
+//let subscription = publisher.sink(
+//    receiveCompletion: { print("🔚 완료: \($0)") },
+//    receiveValue: { print("📦 값: \($0)") }
+//)
+enum APIError: Error {
+    case serverError
+}
+
+enum AppError: Error {
+    case userFriendlyError
+}
+
+// 기존 퍼블리셔에서 발생하는 에러 타입 변환
+let publisher = Fail<String, APIError>(error: .serverError)
+    .mapError { _ in AppError.userFriendlyError } // 에러 변환
+
+let subscription = publisher.sink(
+    receiveCompletion: { print("🔚 완료: \($0)") },
+    receiveValue: { print("📦 값: \($0)") }
+)
+
+
+//🔚 완료: failure(__lldb_expr_35.AppError.userFriendlyError)

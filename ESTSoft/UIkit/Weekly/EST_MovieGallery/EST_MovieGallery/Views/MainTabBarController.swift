@@ -48,7 +48,6 @@ class MainTabBarController: UITabBarController {
         navController.navigationBar.isHidden = true
         return navController
     }
-    
 }
 
 #Preview {
