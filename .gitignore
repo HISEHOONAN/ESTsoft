@@ -86,7 +86,7 @@ fastlane/test_output
 Info.plist
 .DS_STORE
 Key.plist
-
+GoogleService-Info.plist
 # Code Injection
 #
 # After new code Injection tools there's a generated folder /iOSInjectionProject

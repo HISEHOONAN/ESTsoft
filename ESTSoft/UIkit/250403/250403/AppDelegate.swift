@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  250402
+//  250403
 //
-//  Created by 안세훈 on 4/2/25.
+//  Created by 안세훈 on 4/3/25.
 //
 
 import UIKit
@@ -10,14 +10,18 @@ import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
     
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        // Firebase 초기화
-        FirebaseApp.configure()  // import FirebaseCore 필요
+        FirebaseApp.configure()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = LoginViewController()
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        window?.makeKeyAndVisible()
         return true
     }
     
@@ -37,5 +41,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 }
-
-
